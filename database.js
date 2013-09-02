@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 exports.newsSchema = mongoose.Schema({
     title: String,
-    date: Date,
+    date: String,
     body: String, 
     author: String,
     tags: [String]

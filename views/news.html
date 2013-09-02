@@ -3,10 +3,11 @@
     {{#each news}}
         <div class="news-item">
             <h2>{{title}}</h2>
-            <div class="author">{{author}}</div>
-            <div class="date">{{date}}</div>
-            <p>{{body}}</p>
-            {{#each tags}}<span class="tag">{{this}}</span>{{/each}}
+            <div class="details">{{#if author}}Written by {{author}} on {{date}}{{/if}}</div>
+            <div class="body">{{body}}</div>
+            <div class="tags">
+                {{#each tags}}<a class="tag" href="/news?tag={{this}}">{{this}}</a>{{/each}}
+            </div>
         </div>
     {{/each}}
 </div>
