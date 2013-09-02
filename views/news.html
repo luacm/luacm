@@ -1,4 +1,12 @@
-<div class="container ">
-    <h1>Coming Soon!</h1>
-    <p>Our website is still under construction. This will be updated shortly.</p>
+<div class="container">
+    <h1>News</h1>
+    {{#each news}}
+        <div class="news-item">
+            <h2>{{title}}</h2>
+            <div class="author">{{author}}</div>
+            <div class="date">{{date}}</div>
+            <p>{{body}}</p>
+            {{#each tags}}<span class="tag">{{this}}</span>{{/each}}
+        </div>
+    {{/each}}
 </div>
