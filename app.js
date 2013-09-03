@@ -7,6 +7,7 @@ var news = require('./routes/news');
 var workshops = require('./routes/workshops');
 var mobilehigh = require('./routes/mobilehigh');
 var calendar = require('./routes/calendar');
+var login = require('./routes/login');
 var stylus = require('stylus');
 var nib = require('nib');
 
@@ -51,6 +52,8 @@ app.get('/news', news.get);
 app.get('/workshops', workshops.get);
 app.get('/mobilehigh', mobilehigh.get);
 app.get('/calendar', calendar.get);
+app.get('/login', login.get);
+app.post('/login', login.post);
 
 // Setup error pages
 app.use(function(req, res, next) {
