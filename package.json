@@ -8,6 +8,8 @@
     "hbs": "*",
     "mongoose": "*",
     "request": "*",
-    "async": "*"
+    "async": "*",
+    "stylus": "*",
+    "nib": "*"
   }
 }

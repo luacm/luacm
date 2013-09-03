@@ -7,17 +7,33 @@ var news = require('./routes/news');
 var workshops = require('./routes/workshops');
 var mobilehigh = require('./routes/mobilehigh');
 var calendar = require('./routes/calendar');
+var stylus = require('stylus');
+var nib = require('nib');
+
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .use(nib())
+}
 
 // Setup handlebars
 var hbs = require('hbs');
-hbs.registerPartials(__dirname + '/views/partials');
-
-// Setup our public folder for all of our assets and such
-app.use(express.static('public'));
 
 // Set handlebars as our templating engine
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
+
+// Setup the stylus preprocessor
+app.use(stylus.middleware({ 
+    src:  __dirname + "/public/stylus", 
+    dest: __dirname + "/public/css",
+    compile: compile
+  }
+));
+hbs.registerPartials(__dirname + '/views/partials');
+
+// Setup our public folder for all of our assets and such
+app.use(express.static('public'));
 
 // Setup sessions
 app.use(express.cookieParser('spider-man'));
