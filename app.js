@@ -8,6 +8,7 @@ var workshops = require('./routes/workshops');
 var mobilehigh = require('./routes/mobilehigh');
 var calendar = require('./routes/calendar');
 var login = require('./routes/login');
+var base = require('./routes/base');
 var stylus = require('stylus');
 var nib = require('nib');
 
@@ -26,8 +27,8 @@ app.engine('html', hbs.__express);
 
 // Setup the stylus preprocessor
 app.use(stylus.middleware({ 
-    src:  __dirname + "/public/stylus", 
-    dest: __dirname + "/public/css",
+    src:  __dirname + "/public/stylus/", 
+    dest: __dirname + "/public/css/",
     compile: compile
   }
 ));
@@ -54,6 +55,10 @@ app.get('/mobilehigh', mobilehigh.get);
 app.get('/calendar', calendar.get);
 app.get('/login', login.get);
 app.post('/login', login.post);
+app.get('/logout', function(req, res) {
+    req.session.userId = null;
+    base.redirect(res, '/');
+});
 
 // Setup error pages
 app.use(function(req, res, next) {

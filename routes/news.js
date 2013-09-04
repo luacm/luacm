@@ -21,7 +21,8 @@ exports.get = function(req, res) {
                 docs.push({'title':'Sorry, there are no posts that match your criteria.'});
             var data = {
                 title: 'News',
-                news: docs
+                news: docs,
+                loggedIn: req.session.userId
             }
             db.close();
             res.render('news', data);

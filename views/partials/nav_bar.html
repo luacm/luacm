@@ -17,6 +17,11 @@
                     <li><a href="/mobilehigh">mobiLEHIGH</a></li>
                     <li><a href="/calendar">Calendar</a></li>
                 </ul>
+                {{#if loggedIn}}
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                {{/if}}
             </div>
         </div>
     </div>

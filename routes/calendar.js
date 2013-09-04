@@ -1,6 +1,7 @@
 exports.get = function(req, res) {
     var data = {
-        title: 'Calendar'
+        title: 'Calendar',
+        loggedIn: req.session.userId
     }
     res.render('calendar', data);
 };
