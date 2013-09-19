@@ -33,3 +33,14 @@ body {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+.job-table td,
+.job-table th {
+  padding: 5px 10px;
+}
+.job-table th {
+  background-color: #405060;
+  color: #fff;
+}
+.job-table tr:nth-child(odd) {
+  background-color: #eee;
+}
