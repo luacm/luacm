@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>News</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Description</th>
+            <th>Link</th>
+        </tr>
+        {{#each companies}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{position}}</td>
+                <td>{{description}}</td>
+                <td><a href="{{link}}">Apply</a></td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
