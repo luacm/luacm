@@ -11,5 +11,8 @@
     "async": "*",
     "stylus": "*",
     "nib": "*"
+  },
+  "engines": {
+    "node": "0.10.17"
   }
 }
