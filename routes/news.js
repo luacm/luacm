@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var database = require('../database');
+var base = require('./base');
 
 exports.get = function(req, res) {
     var db = database.connect();
@@ -15,7 +16,7 @@ exports.get = function(req, res) {
 
         database.News.find(filter, function(err, docs) {
             for (var i = 0; i < docs.length; i++) {
-                docs[i].date = formatDate(docs[i].date);
+                docs[i].date = base.formatDate(docs[i].date);
             }
             if (docs.length == 0)
                 docs.push({'title':'Sorry, there are no posts that match your criteria.'});
@@ -30,16 +31,3 @@ exports.get = function(req, res) {
         
     });
 };
-
-function formatDate(dateString) {
-    var date = new Date(dateString);
-    var dotw = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-    var dotwString = dotw[date.getDay()];
-    var monthString = months[date.getMonth()];
-    var dateString = date.getDate();
-    var yearString = date.getFullYear();
-
-    return dotwString + ', ' + monthString + ' ' + dateString + ', ' + yearString; 
-}

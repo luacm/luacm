@@ -1,4 +1,18 @@
-<div class="container ">
-    <h1>Coming Soon!</h1>
-    <p>Our website is still under construction. This will be updated shortly.</p>
+<div class="container">
+    <h1>Workshops</h1>
+    {{#each workshops}}
+        <div class="news-item">
+            <h2>{{title}}</h2>
+            <div class="details">{{location}} | {{startTime}} - {{endTime}} | {{date}}</div>
+            <div class="body">{{body}}</div>
+        </div>
+    {{/each}}
 </div>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.body').each(function() {
+        $(this).html($(this).text());
+    })
+});
+</script>
