@@ -10,7 +10,6 @@
     "request": "*",
     "async": "*",
     "stylus": "*",
-    "nib": "*",
-    "google-calendar": "*"
+    "nib": "*"
   }
 }
