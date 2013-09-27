@@ -15,9 +15,6 @@ exports.get = function(req, res) {
             filter = {'tags':tag}
 
         database.News.find(filter, function(err, docs) {
-            for (var i = 0; i < docs.length; i++) {
-                docs[i].date = base.formatDate(docs[i].date);
-            }
             if (docs.length == 0)
                 docs.push({'title':'Sorry, there are no posts that match your criteria.'});
             var data = {

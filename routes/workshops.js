@@ -16,9 +16,9 @@ exports.get = function(req, res) {
             var w = {
                 'title': item.summary,
                 'location': item.location,
-                'date': base.formatDate(item.start.dateTime),
-                'startTime': base.formatTime(item.start.dateTime),
-                'endTime': base.formatTime(item.end.dateTime),
+                'date': item.start.dateTime,
+                'startTime': item.start.dateTime,
+                'endTime': item.end.dateTime,
                 'body': item.description
             };
             workshops.push(w);
