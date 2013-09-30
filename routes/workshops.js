@@ -27,7 +27,7 @@ exports.get = function(req, res) {
         // Sort by date - most recent comes first
         workshops.sort(function(a, b) {
             var dateA = new Date(a.date);
-            var dateB = new Date(a.date);
+            var dateB = new Date(b.date);
             return dateA < dateB;
         });
 
