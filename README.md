@@ -14,10 +14,10 @@ You can verify your node installation is working by typing ```node --version``` 
 ### Installing MongoDB
 This [tutorial](http://www.mkyong.com/mongodb/how-to-install-mongodb-on-mac-os-x/) does a fantastic job getting you setup on Mac OSX. It should be an identical process on Linux.
 
+In the end, you should be able to use the command ```mongod``` to start a local mongo database, and then use ```mongo``` to connect to that locally-running database.
+
 ### Installing the Heroku Toolbelt
 You can grab the installer [here](https://toolbelt.heroku.com/).
-
-In the end, you should be able to use the command ```mongod``` to start a local mongo database, and then use ```mongo``` to connect to that locally-running database.
 
 ## Running the Site Locally (For the First Time)
 Now that you have the necessary software installed, you can run the site locally. Do the following from the root project directory:
