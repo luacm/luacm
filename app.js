@@ -54,6 +54,7 @@ app.get('/news', news.get);
 app.get('/workshops', workshops.get);
 app.get('/jobs', jobs.get);
 app.get('/mobilehigh', mobilehigh.get);
+app.get('/mobilehigh/*', mobilehigh.get);
 app.get('/calendar', calendar.get);
 app.get('/login', login.get);
 app.post('/login', login.post);
