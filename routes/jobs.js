@@ -9,6 +9,7 @@ exports.get = function(req, res) {
     });
     db.once('open', function() {
         database.Company.find(function(err, docs) {
+			if (err) return;
             var data = {
                 title: 'Jobs',
                 companies: docs,
