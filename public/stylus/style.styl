@@ -1,18 +1,48 @@
 // Colors
-navBkgColor = #2c3e50
-navHighlightColor = #405060
+navBkgColor = #444
+navHighlightColor = #ccc
 bodyPadding = 20px
+logoHeight = 37px;
 
 // Generic
 body
     padding 0
     margin 0
 
+h1, h2, h3, h4, h5, h6
+    color navBkgColor
+
 .heading-span
     font-size 28px
 
 .heading-subtitle
     font-size 20px
+
+// Navbar
+.navbar-default
+    background-color navBkgColor
+
+a.navbar-brand
+    padding-top 10px
+    padding-bottom 10px
+    line-height logoHeight
+    font-size 24px
+
+    .navbar-logo
+        height logoHeight
+        width auto
+
+.navbar.navbar-default a.navbar-brand.selected:hover
+    background-color #333
+
+.navbar-default .navbar-nav li a:hover
+    color navHighlightColor
+
+.navbar-default a.navbar-brand:hover
+    color white
+
+a.navbar-brand.selected, .navbar-default .navbar-nav li a.selected
+    background-color #333
 
 // Tags
 .tag
