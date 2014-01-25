@@ -75,18 +75,34 @@ body, html
     margin: auto;
 }
 
-#sign-button
-{
-    height: 100px;
-    width: 170px;
-    font-size: 35px;
+.big-button {
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-    background-color: #2a2;
+    background-color: #40230f;
     border-radius: 0px;
     -webkit-border-radius: 0px;
+}
+
+.big-button:hover {
+    background-color: #513410;
+}
+
+#sign-button
+{
+    height: 80px;
+    width: 170px;
     position: absolute;
-    top: 225px;
+    top: 180px;
+}
+
+#find-team-button
+{
+    line-height: 30px;
+    height: 120px;
+    width: 200px;
+    position: absolute;
+    top: 270px;
 }
 
 legend
