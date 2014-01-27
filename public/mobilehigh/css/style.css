@@ -7,6 +7,7 @@ body, html
 .navbar, .navbar-inner, .navbar .navbar-inner a.brand, .navbar .navbar-inner a.brand:hover {
     background-color: #40230f;
 }
+
 .imgbkg
 {
     background-image: url(../img/banner.jpg);
@@ -14,6 +15,23 @@ body, html
     background-repeat: no-repeat;
     background-color: #b8b69b;
     height: 400px;
+}
+
+.date-passed, .date-passed h1, .date-passed h2, .date-passed h3 {
+    opacity: 0.5;
+}
+
+.date-due, .date-due h1, .date-due h2, .date-due h3 {
+    color: #500;
+}
+
+.date-due a {
+    color: #922;
+}
+
+.date-due a:hover {
+    color: #c55;
+    text-decoration: none;
 }
 
 .shadow
@@ -133,12 +151,13 @@ fieldset
 
 a
 {
-    color: #888;
+    color: #6496CC;
 }
 
 a:hover
 {
-    color: #888;
+    color: #78B4F5;
+    text-decoration: none;
 }
 
 ol li
@@ -155,4 +174,8 @@ ol li
 h1
 {
     margin-top: 15px;    
+}
+
+hr {
+    border-bottom: 1px solid #ccc;
 }
