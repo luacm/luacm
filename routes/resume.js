@@ -10,11 +10,18 @@ exports.get = function(req, res) {
             errorText = "The file you uploaded was not a PDF.";
     }
 
+    // Check for success
+    var successText = null;
+    if (req.query.success) {
+        successText = "Resume successfully uploaded!";
+    }
+
     // Build and send out the data
     var data = {
-        title: "Resume Submission",
-        loggedIn: req.session.userId,
-        error: errorText
+        "title": "Resume Submission",
+        "loggedIn": req.session.userId,
+        "error": errorText,
+        "success": successText
     }
     res.render("resume", data);
 };
@@ -43,7 +50,7 @@ exports.post = function(req, res) {
     // Move the file to the correct resting place
     fs.rename(file.path, newPath, function (err) {
         req.method = "get"; 
-        res.redirect("/resume");
+        res.redirect("/resume?success=true");
     });
     
 };
