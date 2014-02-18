@@ -16,6 +16,16 @@ h6 {
 .heading-subtitle {
   font-size: 20px;
 }
+.help-block {
+  color: #aaa;
+  font-style: italic;
+  font-weight: normal;
+}
+.error {
+  color: #c00;
+  font-style: italic;
+  padding-bottom: 15px;
+}
 .navbar-default {
   background-color: #444;
 }

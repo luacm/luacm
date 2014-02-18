@@ -1,5 +1,5 @@
 // Grab express and our routes
-var express = require('express')
+var express = require('express');
 var app = express();
 var index = require('./routes/index');
 var about = require('./routes/about');
@@ -7,7 +7,7 @@ var news = require('./routes/news');
 var workshops = require('./routes/workshops');
 var jobs = require('./routes/jobs');
 var mobilehigh = require('./routes/mobilehigh');
-var calendar = require('./routes/calendar');
+var resume = require('./routes/resume');
 var login = require('./routes/login');
 var base = require('./routes/base');
 var stylus = require('stylus');
@@ -55,7 +55,8 @@ app.get('/workshops', workshops.get);
 app.get('/jobs', jobs.get);
 app.get('/mobilehigh', mobilehigh.get);
 app.get('/mobilehigh/*', mobilehigh.get);
-app.get('/calendar', calendar.get);
+app.get('/resume', resume.get);
+app.post('/resume', resume.post);
 app.get('/login', login.get);
 app.post('/login', login.post);
 app.get('/logout', function(req, res) {
