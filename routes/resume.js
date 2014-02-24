@@ -41,8 +41,9 @@ exports.post = function(req, res) {
     // Grab all of our params
     var firstName = escape(req.body.firstName).toLowerCase();
     var lastName = escape(req.body.lastName).toLowerCase();
+    var emailId = escape(req.body.emailId).toLowerCase();
     var gradYear = req.body.gradYear;
-    var filename = lastName + "-" + firstName + ".pdf";
+    var filename = lastName + "-" + firstName +  "-" + emailId + ".pdf";
     
     // Construct the new path
     var newPath = __dirname + "/../uploads/resumes/" + req.body.gradYear + "/" + filename;

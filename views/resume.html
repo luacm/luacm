@@ -14,15 +14,21 @@
     </div>
 
     <div class="row">
-        <form role="form" action="/resume" method="post" enctype="multipart/form-data">
+        <form id="js-form" role="form" action="/resume" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" required >
             </div>
 
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" required >
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Lehigh Email ID</label>
+                <input type="text" class="form-control" id="emailId" placeholder="Last Name" name="emailId" minlength="4" maxlength="6" required >
+                <p class="help-block">e.g. abc123</p>
             </div>
 
             <div class="form-group">
@@ -41,7 +47,7 @@
             
             <div class="form-group">
                 <label for="resumeUpload">Resume Upload</label>
-                <input type="file" id="resumeUpload" name="resumeUpload">
+                <input type="file" id="resumeUpload" name="resumeUpload" extension="pdf" required>
                 <p class="help-block">PDF's only. Max filesize of 5mb.</p>
             </div>
 
@@ -56,3 +62,9 @@
         </form>
     </div>
 </div>
+
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.additional.min.js"></script>
+<script type="text/javascript">
+    $("#js-form").validate();
+</script>
