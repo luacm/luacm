@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height">
+        <title>mobiLEHIGH - Assets</title>
+        <?php include '../partials/mobilehigh_imports.php' ?>
+    </head>
+    
+    <body>
+        <?php include '../partials/mobilehigh_nav_bar.php' ?>
+        <div class="imgbkg shadow">
+            <div id="button-holder">
+                <a href="http://goo.gl/ITyvMR" target="parent"><button id="sign-button" class="big-button btn btn-primary" type="Create Account" name="Submit">Sign Up!</button></a>
+                <a href="http://goo.gl/KXEd5P" target="parent"><button id="find-team-button" class="big-button btn btn-primary" type="Create Account" name="Find a Team/Team Member!">Find a Team/Team Member!</button></a>
+            </div>
+        </div>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container content-box">
+            <div class="row">
+                <div class="span12">
+                    <h1 style="text-align: center">Lehigh's 3rd Annual Game Dev Competition!</h1>
+                    <p>
+                    Are you a video game ethusiast? Have you ever wanted to create a game you can call your own? With a huge audience
+                    and great toolset that makes it easy to get started, there's never been a better time to design and create your own games!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="span4">
+                    <h2>No Experience Necessary</h2>
+                    <p>
+                    No experience, no problem! We'll be hosting several tutorial sessions during our kick-off weekend. You'll be given introductions
+                    on how to get started making games for Android, iOS, and Windows 8!
+                    </p>
+                </div>
+                <div class="span4">
+                    <h2>Help Along the Way</h2>
+                    <p>
+                    We'll have Q&A sessions throughout the duration of the competition, and we'll also be hosting a forum where people can get help
+                    with various problems.
+                    </p>
+                </div>
+                <div class="span4">
+                    <h2>Not Just for Programmers</h2>
+                    <p>
+                    Games need artists, musicians, and writers, too! Even if you don't have a team and can't program, you can come to our introductory meeting to
+                    form a team with other people there.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
