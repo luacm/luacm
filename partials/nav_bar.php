@@ -11,18 +11,9 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/news">News</a></li>
-                    <li><a href="/workshops">Workshops</a></li>
-                    <li><a href="/jobs">Jobs</a></li>
-                    <li><a href="/mobilehigh">mobiLEHIGH</a></li>
-                    <li><a href="/resume">Resume Upload</a></li>
+                    <li><a href="/about.php">About</a></li>
+                    <li><a href="/mobilehigh/index.php">mobiLEHIGH</a></li>
                 </ul>
-                {{#if loggedIn}}
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/logout">Logout</a></li>
-                    </ul>
-                {{/if}}
             </div>
         </div>
     </div>

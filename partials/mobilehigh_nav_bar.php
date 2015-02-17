@@ -3,12 +3,12 @@
         <div class="container">
             <ul class="nav">
                 <li class="active">
-                    <a class="brand" href="index.html">mobiLEHIGH</a>
+                    <a class="brand" href="index.php">mobiLEHIGH</a>
                 </li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="dates.html">Dates</a></li>
-                <li><a href="getting_started.html">Getting Started</a></li>
-                <li><a href="assets.html">Free Assets</a></li>
+                <li><a href="rules.php">Rules</a></li>
+                <li><a href="dates.php">Dates</a></li>
+                <li><a href="getting_started.php">Getting Started</a></li>
+                <li><a href="assets.php">Free Assets</a></li>
                 <li><a href="http://goo.gl/gZ3tmI" target="parent">Sign Up</a></li>
                 <li><a href="http://goo.gl/KXEd5P" target="parent">Find a Team</a></li>
             </ul>
