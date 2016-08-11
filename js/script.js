@@ -1,0 +1,27 @@
+$(function() {
+    $('#inner-workshops').hover(function(){
+      $('#workshop-descriptions-wrapper').slideDown();
+    },function(){
+      $('#workshop-descriptions-wrapper').slideUp();
+    });
+    $('.workshop-button#git').hover(function(){
+      $('.workshop-description#git').fadeIn();
+    },function(){
+      $('.workshop-description#git').fadeOut();
+    });
+    $('.workshop-button#web').hover(function(){
+      $('.workshop-description#web').fadeIn();
+    },function(){
+      $('.workshop-description#web').fadeOut();
+    });
+    $('.workshop-button#android').hover(function(){
+      $('.workshop-description#android').fadeIn();
+    },function(){
+      $('.workshop-description#android').fadeOut();
+    });
+    $('.workshop-button#games').hover(function(){
+      $('.workshop-description#games').fadeIn();
+    },function(){
+      $('.workshop-description#games').fadeOut();
+    });
+});
