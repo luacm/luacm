@@ -9,6 +9,7 @@
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/all.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
     </head>
      
     <body>
@@ -69,26 +70,89 @@
         <!-- Empty navbar to use as a divider -->
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h1>Learn New Skills</h1>
+                <div class="col-md-8">
+                    <div id="skills">
+		    <h1>Learn New Skills</h1>
                     <p>
-                        Class is great, but it can't teach you everything. Courses at Lehigh focus
+                        <span class="first-sentence">Class is great, but it can't teach you everything.</span> Courses at Lehigh focus
                         on core programming concepts and theory, and unfortunately don't ever go
                         much into practical applications. We're hoping to fill that gap by
                         running a series of workshops where you'll learn skills like web development, 
-                        game development, and modern software engineering best practices and styles.
+                        game development, modern software engineering best practices and styles, and more that they don't
+			teach you in the classroom!
                     </p>
-                </div>
-                <div class="col-md-4">
+		    </div>
+		    <div id="workshops-wrapper">
+		    <div id="workshops-button-bar">
+		    <span id="inner-workshops"><div class="workshop-button" id="git">Git</div>
+		    <div class="workshop-button" id="web">Web</div>
+		    <div class="workshop-button" id="android">Android</div>
+		    <div class="workshop-button" id="games">Games</div>
+		    </div></span>
+		    <div id="workshop-descriptions-wrapper">
+		    <div class="workshop-description" id="git">
+			Learn the essentials of using git, the industry standard for version control, 
+			from skilled students who have been using it for years! Diving in by yourself can be difficult, 
+			in our workshop we'll be available to work with you one-on-one to make sure you understand everything.</div>
+		    <div class="workshop-description" id="web">
+			Web development has never been more important or more powerful, both in the tools at your disposal 
+			and in the wide reach you can have. Learn the skills necessary to master web development such as html, javascript, 
+			css, php, and more!</div>
+		    <div class="workshop-description" id="android">
+			Ever had the perfect app idea but didn't have the skills to develop it? We'll show you everything 
+			you need to know from setting up your development environment to developing awesome Android applications 
+			and games.</div>
+		    <div class="workshop-description" id="games">
+			Learn the skills and libraries you need to know to start off as a game developer! We'll teach you through examples 
+			how to program fun and engaging games.</div>
+		    <div style="clear: both;"></div> 
+		    </div>
+		    </div>
+		    <hr>
                     <h1>Cool Events</h1>
                     <p>
-                        Last year, our big event was the mobiLEHIGH mobile game programming competition.
-                        It was well-received, and this year we hope to make it even better. We'll also
-                        be running less formal events, like study/tutor sessions for computer science
-                        courses and movie nights.
+                        <span class="first-sentence">Our events and hackathons bring together the programming community.</span> 
+			Events are open to everyone, no matter what level of programming experience. 
+			The events are a great way to meet and learn from other programmers in the Lehigh community as well as a place where you can show off what you've learned and earn 
+                        great prizes from sponsors such as Google, IBM, Lutron, and more!
                     </p>
-                </div>
-                <div class="col-md-4">
+                    <p>
+                        <span class="first-sentence">LU Apps application development competition</span> 
+                        is a competition held in the fall where students develop and showcase an application. 
+                        The application can be anything from a game to schedule planner, and there are prizes given out by 
+                        many big name corporate sponsors!
+                    </p>
+                    <p>
+                        <span class="first-sentence">MobiLehigh mobile game development competition</span> 
+                        is a competition held in the spring where students develop and showcase a mobile game. 
+                        Everyone is encouraged to participate, not just programmers - games also need design, art, and story! 
+                        Leading up to the event are several workshops on game development as well as several checkpoints to 
+                        make the process as easy as possible. On the day of the showcase, students from the local middle school come 
+                        to play the games and vote on their favorite, as well as judges from several companies.
+                    </p>
+                    
+                        <div id="lehigh-hacks">
+                        <div style="float: left; /*width: 64%;*/" id="lehigh-hacks-text">
+                            <p>
+                        <span class="first-sentence">Lehigh Hacks</span> 
+                        is a hackathon which was started just last year, but saw an amazing turnout and many great creations! 
+                        You'll have 36 hours to work with a team to create an application, website, program, or whatever you'd 
+                        like to create using technology provided by the many corporate sponsors! Last year IBM made available their 
+                        Watson computing technology. The event includes free food and drinks, many prizes, tons of learning and 
+                        networking opportunities, and a great experience! 
+                        <!--<img align="right" style="/*float:right;*/ width: 35%; height: auto;" src="https://i.ytimg.com/vi/GK1oTDsOHhY/maxresdefault.jpg">-->
+                        </p>
+                        </div>
+                        
+                        
+                        <!--<div style="display: inline-block; width: 35%; height: auto;" id="lehigh-hacks-image">-->
+                        <!--</div>-->
+                        <div style="clear: both;"></div>
+                        </div>
+                    
+                        <!--Our big events are the LUApps application development competition and 
+                        mobiLEHIGH mobile game programming competition-->
+		    <hr>
                     <h1>ACM</h1>
                     <p>
                         Programming Club also represents Lehigh's chapter of the Association for Computing
@@ -97,6 +161,27 @@
                         of logic puzzles.
                     </p>
                 </div>
+		<div class="col-md-4">
+		<div id="events-wrapper">
+		<div id="events-header">Upcoming Events</div>
+		<div class="event-row first even">
+			<div class="date">Aug 25</div><span>Example Event</span></div>
+		<div class="event-row odd">
+                        <div class="date">Sep 4</div><span>Example Event</span></div>
+		<div class="event-row even">
+                        <div class="date">Sep 10</div><span>Example Event with really long name</span></div>
+		<div class="event-row last odd">
+                        <div class="date">Sep 14</div><span>Example Event</span></div>
+		</div>
+		<div id="github-wrapper">
+			<a href="https://www.github.com/luacm">
+			<div id="github-image"><img style="height: 100px; width: 100px;" src="http://image.flaticon.com/icons/png/512/25/25231.png">
+			<img style="height: 100px; width: 100px;" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"></div></a>
+			<div id="github-text">Find us on GitHub
+			<p><a href="https://www.github.com/luacm">github.com/luacm</a></p>
+		</div>
+		</div>
+		</div>
             </div>
         </div>
     </body>
